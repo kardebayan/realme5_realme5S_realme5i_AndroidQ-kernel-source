@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0
-# ifndef VENDOR_EDIT
+# ifndef CONFIG_VENDOR_EDIT
 #dts-dirs += actions
 #dts-dirs += al
 #dts-dirs += allwinner
@@ -16,7 +16,6 @@
 #dts-dirs += marvell
 #dts-dirs += mediatek
 #dts-dirs += nvidia
-#dts-dirs += qcom
 #dts-dirs += realtek
 #dts-dirs += renesas
 #dts-dirs += rockchip
@@ -26,15 +25,8 @@
 #dts-dirs += lg
 #dts-dirs += zte
 # else
-#dts-dirs += 19375
-# endif /* VENDOR_EDIT */
-#ifdef VENDOR_EDIT
-#dts-dirs += 19571
-# endif /* VENDOR_EDIT */
-#ifdef VENDOR_EDIT
-#dts-dirs += 19021
-dts-dirs += 19631
-#endif
+dts-dirs += qcom
+# endif
 
 subdir-y	:= $(dts-dirs)
 
